@@ -66,7 +66,7 @@ resource "kubernetes_manifest" "statefulset_photoprism_photoprism" {
                 },
                 {
                   "name"  = "PHOTOPRISM_WORKERS"
-                  "value" = "1"
+                  "value" = "2"
                 },
                 {
                   "name"  = "PHOTOPRISM_DISABLE_TENSORFLOW"
@@ -109,11 +109,11 @@ resource "kubernetes_manifest" "statefulset_photoprism_photoprism" {
               }
               "resources" = {
                 "limits" = {
-                  "cpu"    = "1"
+                  "cpu"    = "2"
                   "memory" = "2560Mi"
                 }
                 "requests" = {
-                  "cpu"    = "1"
+                  "cpu"    = "2"
                   "memory" = "2Gi"
                 }
               }
